@@ -1,0 +1,88 @@
+body {
+    background: linear-gradient(to right, #1e5799, #7db9e8);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    display: flex;
+    justify-content: center; /* center the content horizontally */
+    align-items: center; /* center the content vertically */
+    height: 100vh; /* make the body take up the full screen height */
+  }
+  
+  /* Add the animation keyframes */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  
+      /* Form styling */
+      form {
+        background-color:#7db9e8;
+        padding: 20px;
+        border-radius: 10px; /* add rounded edges to the form */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* add a subtle box shadow */
+        width: 50%; /* set the width of the form to take up half of the screen */
+        /* background-image: linear-gradient(to right, #1e5799, #7db9e8); */
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+      }
+  
+      /* Input field styling */
+      input[type="text"], textarea {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        box-sizing: border-box;
+        border: 2px solid #1e5799;
+        border-radius: 4px;
+      }
+      /* Select field styling */
+      select {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+      }
+  
+      /* File input styling */
+      input[type="file"] {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+  
+      input[type="file"]:hover {
+    background-color: #E0E0E0;
+  }
+  
+      /* Button styling */
+      button {
+        background-color: #3b95da;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+      }
+  
+      button:hover {
+    background-color: #1e5799;
+  }
+  
+      /* Error message styling */
+      .error {
+        color: red;
+        margin-top: 10px;
+      }

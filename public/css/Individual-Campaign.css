@@ -1,0 +1,76 @@
+/* Global styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add the animation keyframes */
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Add the gradient background */
+  body {
+    background: linear-gradient(to right, #003049, #87CEFA);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+  }
+  
+  /* Header */
+  header {
+    background-color: #003049;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #E0E0E0;
+  }
+  
+  /* Campaign sections */
+  section {
+    padding: 50px;
+  }
+  
+  /* Photo Gallery */
+  .photo-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .photo-container img {
+    width: 30%;
+  }

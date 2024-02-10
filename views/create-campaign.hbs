@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create a Campaign</title>
+  <link rel="stylesheet" href="css/Campaign-creation.css">
+</head>
+<body>
+  <form>
+    <h2>Create a Campaign</h2>
+    <input type="text" placeholder="Campaign Title" id="title" required>
+    <textarea placeholder="Campaign Description" id="description" required></textarea>
+    <span> Select project images
+        <input type="file" id="image" accept="image/*" required>
+    </span>
+    <textarea placeholder="Timeline" id="timeline" required></textarea>
+    <input type="text" placeholder="Team Members" id="members" required>
+    <input type="text" placeholder="Estimated Funding Goal" id="funding" required>   
+    <span> Select project logo
+        <input type="file" id="logo" accept="image/*" required>
+    </span>
+    <button type="submit">Create Campaign</button>
+    <div class="error" id="error"></div>
+  </form>
+
+  <script>
+    // Form validation
+    var form = document.querySelector("form");
+    var error = document.getElementById("error");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        error.innerHTML = "Please fill in all fields and upload an image.";
+      } else {
+        error.innerHTML = "";
+        // Add code here to submit the form data to the server or database
+        alert("Campaign created!");
+      }
+    });
+  </script>
+</body>
+</html>
